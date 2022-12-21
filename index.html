@@ -6,11 +6,23 @@
   <link rel='stylesheet' href="etchasketch.css">
 </head>
 <body>
-  <button class="button">Click me to start</button>
-  <button onclick="resetBoard()">Reset</button>
-   <div id="container">
+  <div class="container">
+    <button onclick="resetBoard()">Reset</button>
+    <input
+            type="text"
+            placeholder="Size of Board"
+            value="16"
+            onchange="changeSize(this.value)"
+          />
+          <button>Set Size</button>
+          <div class="error">Input must be between 2 and 100</div>
+    <div class="grid">
 
-   </div>
+
+    </div>
+   
+
+  </div>
 <script src="etchasketch.js" defer>
 </script>
 </body>
