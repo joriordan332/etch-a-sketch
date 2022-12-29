@@ -7,18 +7,25 @@
 </head>
 <body>
   <div class="container">
-    <button onclick="resetBoard()">Reset</button>
-    <input
-            type="text"
-            placeholder="Size of Board"
-            value="16"
-            onchange="changeSize(this.value)"
-          />
-          <button>Set Size</button>
-          <div class="error">Input must be between 2 and 100</div>
+    <h1 class="animate-charcter">Etch-a-Sketch</h1>
+    <div id="input">
+      <p>New grid size:</p>
+      <input id="user-number"
+        type="text"
+        value=""
+        onchange="changeSize(this.value)"
+      />
+        <button>Submit</button>
+    </div>
+    <p id="prompt"></p>
+  
+    <div id="buttons">
+      <button class="black" onclick="changeColor('black')">Black</button>
+      <button class="randomButton" onclick="changeColor('random')">Random</button>
+      <button class="eraser" onclick="changeColor('white')">Eraser</button>
+      <button class="reset" onclick="resetBoard()">Clear</button>
+    </div>
     <div class="grid">
-
-
     </div>
    
 
