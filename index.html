@@ -15,14 +15,14 @@
         value=""
         onchange="changeSize(this.value)"
       />
-        <button>Submit</button>
+        <button class="submit">Submit</button>
     </div>
     <p id="prompt"></p>
   
     <div id="buttons">
-      <button class="black" onclick="changeColor('black')">Black</button>
-      <button class="randomButton" onclick="changeColor('random')">Random</button>
-      <button class="eraser" onclick="changeColor('white')">Eraser</button>
+      <input type="radio" id="black" name="pen" value="black"> <label for="black">Black</label>
+      <input type="radio" id="rainbow" name="pen" value="rainbow"> <label for="Rainbow">Rainbow</label>
+      <input type="radio" id="eraser" name="pen" value="eraser"> <label for="eraser">Eraser</label>
       <button class="reset" onclick="resetBoard()">Clear</button>
     </div>
     <div class="grid">

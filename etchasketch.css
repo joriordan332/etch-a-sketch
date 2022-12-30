@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Exo:wght@900&display=swap');
+
 .container {
   width: 100vw;
   height: 100vh;
@@ -6,12 +8,12 @@
   justify-content: center;
   align-items: center;
   flex-direction: column;
-  gap: 2%;
+  font-family: Exo;
   }
 
 .grid {
   display: grid;
-  border: 5px solid black;
+  border: 10px solid black;
   border-radius: 5px;
   width: 60%;
   height: 60%;
@@ -40,7 +42,7 @@
   -webkit-text-fill-color: transparent;
   animation: textclip 8s linear infinite;
   display: inline-block;
-      font-size: 45px;
+  font-size: 45px;
 }
 
 @keyframes textclip {
@@ -49,29 +51,41 @@
   }
 }
 
-.input {
-  width: 20px;
-  
-}
-
 #prompt {
   font-size: 14px;
-  color: rgb(0, 0, 0);
+  color: rgb(255, 0, 0);
 }
 
-.blackButton {
-  background-color: black;
-  color: white;
+#buttons {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  margin-bottom: 10px;
 }
 
-.blackButton:hover {
-  background-color: white;
-  color: black;
+.submit, .reset {
+  padding: 2px;
+  padding-right: 6px;
+  padding-left: 6px;
+  background-color: rgb(212, 238, 255);
+  border-radius: 4px;
+  font-family: exo;
+  border: 2px solid rgb(71, 69, 69);
+    cursor: pointer;
 }
 
-.randomButton {
-  
+#input {
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
-.randomButton:hover {
-  background: linear-gradient(0.25turn, #20ff02, #ebf8e1, #aecc03);
+
+#user-number {
+  width: 25px;
+  border: 2px solid rgb(71, 69, 69);
+  margin-left: 8px;
+  margin-right: 8px;
+  border-radius: 4px;
 }
+
