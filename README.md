@@ -1,4 +1,4 @@
-# etch-a-sketch
+# Etch-a-Sketch
 https://joriordan332.github.io/etch-a-sketch/
 
 * Select black or rainbow which colours each cell a random colour when the mouse passes over
